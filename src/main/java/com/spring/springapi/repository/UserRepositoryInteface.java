@@ -1,12 +1,11 @@
 package com.spring.springapi.repository;
 
-import com.spring.springapi.model.UserModelInterface;
-
-import java.util.Stack;
+import com.spring.springapi.model.UserModel;
+import java.util.List;
 
 public interface UserRepositoryInteface {
 
-    public String create(String name, String email, String password);
+    public UserModel create(UserModel user);
 
-    public Stack<UserModelInterface> get();
+    public List<UserModel> get();
 }
